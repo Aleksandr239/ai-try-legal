@@ -6,77 +6,127 @@
   <title>Privacy Policy — AI TRY</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 1.5rem; color: #1a1a1a; }
-    @media (prefers-color-scheme: dark) { body { color: #eee; background: #121212; } a { color: #9cf; } }
-    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-    .muted { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
-    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
-    ul { padding-left: 1.25rem; }
-    a { color: #06c; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65; margin: 0; padding: 1.5rem; color: #1a1a1a; background: #fafafa; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #eee; background: #121212; }
+      a { color: #9cf; }
+      .policy-root h2 { color: #fff; }
+    }
+    .policy-root { max-width: 44rem; margin: 0 auto; }
+    .policy-root h1 { font-size: 1.85rem; margin: 0 0 0.25rem 0; }
+    .policy-root .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    @media (prefers-color-scheme: dark) { .policy-root .updated { color: #aaa; } }
+    .policy-root h2 { font-size: 1.15rem; margin-top: 1.75rem; margin-bottom: 0.5rem; color: #000; }
+    .policy-root ul, .policy-root ol { padding-left: 1.25rem; margin: 0.5rem 0; }
+    .policy-root li { margin: 0.25rem 0; }
+    .policy-root p { margin: 0.65rem 0; }
+    .policy-root a { color: #06c; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: 24 March 2026 · AI TRY (&ldquo;we&rdquo;, &ldquo;us&rdquo;)</p>
+  <main id="privacy-policy-root" class="policy-root">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 2026-03-25 · AI TRY (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;)</p>
 
-  <h2>1. Scope</h2>
-  <p>This Policy describes how we process personal data when you use authentication, virtual try-on, optional ads, subscriptions, weather context, and cloud features.</p>
+    <h2>1. Scope</h2>
+    <p>This Privacy Policy explains how AI TRY (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) processes personal data when you use authentication, virtual try-on, ads, subscriptions, weather context, and cloud storage features.</p>
+    <p>This Policy is intended for users in the EU/EEA, UK, US, and other jurisdictions with equal or less strict privacy requirements.</p>
 
-  <h2>2. Data we process</h2>
-  <ul>
-    <li>Account data: user ID, email, authentication metadata.</li>
-    <li>Profile data: body-related parameters, style preferences, language, city or region where you provide it, subscription tier, credits.</li>
-    <li>User media: profile photo, garment photos, try-on results, optional label photos.</li>
-    <li>Billing and usage: ad reward events, credit operations, subscription/payment-related events.</li>
-    <li>Location and weather: source (e.g. GPS, IP, manual), city, weather summary where used.</li>
-    <li>Technical data: logs and operational data for reliability and security.</li>
-  </ul>
+    <h2>2. Data We Process</h2>
+    <ul>
+      <li>Account data: user ID, email address, authentication provider metadata.</li>
+      <li>Profile data: body-related parameters, style preferences, app language, city, subscription tier, and credits balance.</li>
+      <li>User media: profile photo, garment photos, virtual try-on results, and optional label photos.</li>
+      <li>Usage and billing events: rewarded ad events, credit operations, and subscription/payment status events.</li>
+      <li>Location and weather context: location source (GPS/IP/manual), city, and weather summary.</li>
+      <li>Technical and diagnostic data: logs and operational events needed for service reliability, security, and abuse prevention.</li>
+    </ul>
 
-  <h2>3. Service providers</h2>
-  <p>We use providers such as Supabase (auth, database, storage), Google Gemini (AI processing), Google AdMob (rewarded ads), Stripe (payments, when enabled), and weather/geolocation services. They process data under their own terms.</p>
+    <h2>3. Sources of Data</h2>
+    <ul>
+      <li>Directly from you (for example profile inputs and uploaded photos).</li>
+      <li>Automatically from app/device usage (for example diagnostics and service events).</li>
+      <li>From integrated providers (for example authentication, billing, ads, weather and geolocation services).</li>
+    </ul>
 
-  <h2>4. Purposes</h2>
-  <ul>
-    <li>Run the app and sync your data.</li>
-    <li>Generate try-on and related features.</li>
-    <li>Manage credits, ads, and subscriptions.</li>
-    <li>Localise and personalise the experience.</li>
-    <li>Build <strong>aggregated, non-identifying</strong> statistics about apparel categories, preferences, and usage for industry insight products.</li>
-    <li>Security, fraud prevention, and legal compliance.</li>
-  </ul>
+    <h2>4. Services We Use (Processors / Third Parties)</h2>
+    <ul>
+      <li><strong>Supabase</strong>: authentication, database, storage, and RPC.</li>
+      <li><strong>Google Gemini API</strong>: AI image analysis and virtual try-on generation.</li>
+      <li><strong>Google AdMob</strong>: rewarded ads.</li>
+      <li><strong>Stripe</strong>: checkout and payment/subscription processing (when enabled).</li>
+      <li><strong>OpenWeather</strong> and fallback geolocation providers: weather and location context.</li>
+    </ul>
+    <p>These providers process data under their own privacy terms and policies.</p>
 
-  <h2>5. Industry insights — important</h2>
-  <p><strong>We do not sell your personal data.</strong> We do not give fashion retailers, marketplaces, or similar partners your name, email, account identifiers, photos, or other information in a form that identifies you as an individual.</p>
-  <p>We may license or share <strong>aggregated and de-identified</strong> statistics (for example shares of categories, colours, brands, or broad demographic bands such as age range or country region) where the output is not intended to identify any person.</p>
+    <h2>5. Purposes of Processing</h2>
+    <ul>
+      <li>Provide account access and sync app data.</li>
+      <li>Generate virtual try-on outputs and styling features.</li>
+      <li>Manage credits, rewarded ads, and subscriptions.</li>
+      <li>Localize and personalize user experience.</li>
+      <li>Produce aggregated, non-identifying statistics about apparel categories, preferences, and in-app usage for industry insight products (see section 9).</li>
+      <li>Maintain security, prevent abuse/fraud, and troubleshoot incidents.</li>
+      <li>Comply with legal obligations.</li>
+    </ul>
 
-  <h2>6. Legal bases (EU / UK)</h2>
-  <p>Where GDPR or UK GDPR applies, we rely on contract (core features), consent where required (including certain advertising), legitimate interests (security, reliability, and where applicable preparation of aggregated industry statistics that do not identify individuals), and legal obligation where applicable.</p>
+    <h2>6. Legal Bases (EU/UK)</h2>
+    <p>Where GDPR / UK GDPR applies, we rely on:</p>
+    <ul>
+      <li>Performance of a contract (core app functionality).</li>
+      <li>Consent (where required, including certain advertising/marketing processing).</li>
+      <li>Legitimate interests (service security, reliability, abuse prevention, and&mdash;where applicable&mdash;preparing aggregated industry statistics that do not identify individuals).</li>
+      <li>Legal obligations (where applicable).</li>
+    </ul>
 
-  <h2>7. International transfers</h2>
-  <p>Data may be processed outside your country on provider infrastructure. Where required, we use appropriate safeguards.</p>
+    <h2>7. Ads and Consent</h2>
+    <p>We use AdMob for rewarded ads. Where required by law (including parts of EU/EEA/UK), consent is requested and can be updated via privacy options available in the app experience or platform controls.</p>
 
-  <h2>8. Retention and deletion</h2>
-  <p>We keep personal data while your account is active and as needed for law, security, or disputes. You can request account deletion in the app. After deletion, <strong>aggregated statistics that cannot be linked to you</strong> may be retained.</p>
+    <h2>8. Data Sharing and International Transfers</h2>
+    <p>We may share relevant data with service providers listed above to deliver app functionality, payments, AI processing, ads, and infrastructure operations.</p>
+    <p><strong>We do not sell your personal data.</strong> We do not provide your name, email address, account identifiers, photos, or other content in a form that identifies you to fashion retailers, marketplaces, or similar partners for their own marketing or profiling of you as an individual.</p>
+    <p>We may license or share <strong>aggregated and de-identified</strong> statistics about clothing categories, brands, colours, general demographics (for example age range or country region in summary form), and usage patterns, where those outputs are designed so they do not reasonably identify any person. Partners in the fashion and retail sector may receive only such statistical reports or datasets&mdash;not your account or gallery.</p>
+    <p>Depending on provider infrastructure, personal data may be processed outside your country. Where required, we rely on appropriate safeguards for international transfers.</p>
 
-  <h2>9. Your rights</h2>
-  <p>Depending on your location, you may have rights to access, correct, delete, restrict, object, portability, and to withdraw consent. US state laws may provide additional rights. You may contact a supervisory authority where applicable.</p>
+    <h2>9. Account deletion and retention</h2>
+    <p><strong>How to delete your account.</strong> AI TRY is available only as a mobile application for Android (and any other platforms we publish). There is no web login or browser version of the app&mdash;accounts are created and used inside the app only.</p>
+    <p>To delete your account and associated personal data:</p>
+    <ol>
+      <li>Open the AI TRY app and sign in.</li>
+      <li>Open your <strong>Profile</strong> screen.</li>
+      <li>Tap <strong>Delete account</strong> and confirm when prompted.</li>
+    </ol>
+    <p>This triggers removal of your account and profile-linked records and associated files (such as photos and try-on results) in line with our backend configuration. Processing may take a short time to complete across systems.</p>
+    <p><strong>If you cannot use the app</strong> (for example you uninstalled it or lost access to your device), you may contact us by email (see section 14). Include &ldquo;Account deletion&rdquo; in the subject line and, if possible, the email address linked to your account so we can verify your request.</p>
+    <p><strong>Retention.</strong> We retain personal data while your account is active unless a longer retention period is required by law, fraud prevention, dispute resolution, or security obligations.</p>
+    <p>After account deletion, industry statistics that are already aggregated and do not identify individuals may be retained where they cannot be linked back to your account.</p>
+    <p>Certain internal and external analytics outputs are produced only in anonymized and/or aggregated form and are not intended to identify an individual user.</p>
 
-  <h2>10. Children</h2>
-  <p>The app is not directed at children under 13 (or the higher minimum age in your region).</p>
+    <h2>10. Security</h2>
+    <p>We apply reasonable technical and organizational safeguards, including authentication controls, access restrictions, and storage/database permissions. No method of transmission or storage is 100% secure.</p>
 
-  <h2>11. Changes</h2>
-  <p>We may update this Policy and change the &ldquo;Last updated&rdquo; date above.</p>
+    <h2>11. Your Privacy Rights</h2>
+    <ul>
+      <li>Access personal data.</li>
+      <li>Correct inaccurate data.</li>
+      <li>Delete personal data.</li>
+      <li>Restrict or object to certain processing.</li>
+      <li>Data portability.</li>
+      <li>Withdraw consent where processing is consent-based.</li>
+      <li>Lodge a complaint with a supervisory authority/regulator.</li>
+    </ul>
+    <p><strong>US State Privacy Rights:</strong> where applicable under US state privacy laws, you may also have rights to know, delete, correct, and opt out of certain data uses/sharing.</p>
 
-<h2>Account deletion</h2>
-<p><strong>App only.</strong> AI TRY is available only as a mobile application. There is no web login—accounts are used inside the app.</p>
-<p><strong>Steps to delete your account and personal data:</strong></p>
-<ol>
-  <li>Open the AI TRY app and sign in.</li>
-  <li>Open your <strong>Profile</strong> screen.</li>
-  <li>Tap <strong>Delete account</strong> and confirm.</li>
-</ol>
-<p>This removes your account, profile-linked data, and associated files (e.g. photos and try-on results) according to our backend. Completion may take a short time.</p>
-<p><strong>If you cannot use the app,</strong> email us (see Contact below) with subject line <strong>Account deletion</strong> and, if possible, the email address on your account.</p>
+    <h2>12. Children</h2>
+    <p>AI TRY is not directed to children under 13 (or under the higher minimum age required by local law). If you believe a child provided personal data unlawfully, contact us for deletion.</p>
 
-<h2>Contact</h2>
-<p>For privacy questions, <strong>account deletion</strong> (including if you cannot access the app), and other requests: <a href="mailto:m.kiseleva.de@gmail.com">m.kiseleva.de@gmail.com</a></p>
+    <h2>13. Changes to this Policy</h2>
+    <p>We may update this Policy from time to time. We will publish the updated version and revise the &ldquo;Last updated&rdquo; date.</p>
+
+    <h2>14. Contact</h2>
+    <p>For general privacy questions, <strong>account deletion</strong> (including if you need help because you cannot access the app), and other data-protection requests, contact:</p>
+    <p><a href="mailto:m.kiseleva.de@gmail.com"><strong>m.kiseleva.de@gmail.com</strong></a></p>
+    <p>This document is published at <a href="https://privacyaitry.com">https://privacyaitry.com</a>.</p>
+  </main>
+</body>
+</html>
